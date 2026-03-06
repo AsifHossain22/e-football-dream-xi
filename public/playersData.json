@@ -1,0 +1,110 @@
+[
+  {
+    "playerImage": "https://i.ibb.co/TqnKrRd4/Kylian-Mbapp.jpg",
+    "playerName": "Kylian Mbappé",
+    "country": "France",
+    "playingRole": "CF",
+    "playingStyle": "Goal Poacher",
+    "price": "740,000 GP",
+    "rating": 101
+  },
+  {
+    "playerImage": "https://i.ibb.co/KcFxRq7y/Erling-Haaland.jpg",
+    "playerName": "Erling Haaland",
+    "country": "Norway",
+    "playingRole": "CF",
+    "playingStyle": "Fox in the Box",
+    "price": "620,000 GP",
+    "rating": 100
+  },
+  {
+    "playerImage": "https://i.ibb.co/GQV6Q7NF/Jude-Bellingham.jpg",
+    "playerName": "Jude Bellingham",
+    "country": "England",
+    "playingRole": "AMF",
+    "playingStyle": "Hole Player",
+    "price": "510,000 GP",
+    "rating": 98
+  },
+  {
+    "playerImage": "https://i.ibb.co/DfYrLbNk/Rodri.jpg",
+    "playerName": "Rodri",
+    "country": "Spain",
+    "playingRole": "DMF",
+    "playingStyle": "Anchor Man",
+    "price": "480,000 GP",
+    "rating": 97
+  },
+  {
+    "playerImage": "https://i.ibb.co/SwTGTDY4/Lamine-Yamal.jpg",
+    "playerName": "Lamine Yamal",
+    "country": "Spain",
+    "playingRole": "RWF",
+    "playingStyle": "Roaming Flank",
+    "price": "320,000 GP",
+    "rating": 102
+  },
+  {
+    "playerImage": "https://i.ibb.co/KpSnCN4z/Vin-cius-J-nior.jpg",
+    "playerName": "Vinícius Júnior",
+    "country": "Brazil",
+    "playingRole": "LWF",
+    "playingStyle": "Prolific Winger",
+    "price": "480,000 GP",
+    "rating": 98
+  },
+  {
+    "playerImage": "https://i.ibb.co/qM6KYdJf/Virgil-van-Dijk.jpg",
+    "playerName": "Virgil van Dijk",
+    "country": "Netherlands",
+    "playingRole": "CB",
+    "playingStyle": "Build Up",
+    "price": "450,000 GP",
+    "rating": 96
+  },
+  {
+    "playerImage": "https://i.ibb.co/HDmH8MRZ/Kevin-De-Bruyne.jpg",
+    "playerName": "Kevin De Bruyne",
+    "country": "Belgium",
+    "playingRole": "AMF",
+    "playingStyle": "Creative Playmaker",
+    "price": "450,000 GP",
+    "rating": 97
+  },
+  {
+    "playerImage": "https://i.ibb.co/WpdcrP2K/Mohamed-Salah.jpg",
+    "playerName": "Mohamed Salah",
+    "country": "Egypt",
+    "playingRole": "RWF",
+    "playingStyle": "Roaming Flank",
+    "price": "450,000 GP",
+    "rating": 96
+  },
+  {
+    "playerImage": "https://i.ibb.co/WptDhCG6/Alisson-Becker.jpg",
+    "playerName": "Alisson Becker",
+    "country": "Brazil",
+    "playingRole": "GK",
+    "playingStyle": "Offensive Goalkeeper",
+    "price": "400,000 GP",
+    "rating": 96
+  },
+  {
+    "playerImage": "https://i.ibb.co/gZ4rJndP/Rafael-Le-o.jpg",
+    "playerName": "Rafael Leão",
+    "country": "Portugal",
+    "playingRole": "LWF",
+    "playingStyle": "Prolific Winger",
+    "price": "300,000 GP",
+    "rating": 95
+  },
+  {
+    "playerImage": "https://i.ibb.co/svcqcdwm/Bukayo-Saka.jpg",
+    "playerName": "Bukayo Saka",
+    "country": "England",
+    "playingRole": "RWF",
+    "playingStyle": "Prolific Winger",
+    "price": "350,000 GP",
+    "rating": 96
+  }
+]

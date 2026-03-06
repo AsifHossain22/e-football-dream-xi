@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
+
+/* GlobalStyles */
+@theme {
+  /* FontsVariables */
+  --font-sora: "Sora", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* ColorsVariables */
+  --color-nav-link: #13131370;
+  --color-hover-nav-link: #2d3caf;
+  --color-btn-primary: #ffce00;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-inter);
+}
+
+.footer-links {
+  list-style-type: square;
+  padding-left: 1.5rem; /* Adjust as needed for spacing */
+}
