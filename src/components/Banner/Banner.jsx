@@ -9,22 +9,23 @@ const Banner = () => {
           {/* BannerImage */}
           <div>
             <img
-              className="w-6/12 mx-auto invert"
+              className="w-7/12 mx-auto"
               src={bannerImage}
               alt="Banner Image"
             />
           </div>
           {/* BannerContent */}
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-center text-nav-link">
-              Choose Your Ultimate
-              <br /> Dream E-Football Players
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-nav-link">
+              Build Your Ultimate Dream Team
             </h1>
-            <p className="text-center my-4 text-xl mg:text-2xl font-medium">
-              Beyond Boundaries Beyond Limits
+            <p className="text-center my-4 text-xl mg:text-2xl font-medium md:w-7/12 mx-auto">
+              Dominate the pitch by building your ultimate dream team, crafting
+              winning strategies and leading your squad to unstoppable football
+              glory.
             </p>
-            <div className="inline-block border-2 border-btn-primary hover:border-[#E5BE71] rounded-2xl transition-colors duration-300">
-              <button className="px-5 py-3.5 m-2 text-sm md:text-base bg-btn-primary text-nav-link font-bold bg-linear-to-r hover:from-[#DB7D99] hover:via-[#E3A65F] hover:to-[#E5BE71] rounded-xl transition-colors duration-500 cursor-pointer">
+            <div className="inline-block border-2 border-e-football-pink hover:border-e-football-yellow rounded-full hover:scale-105 transition-all duration-300">
+              <button className="px-5 py-3.5 m-2 text-sm md:text-base text-white hover:text-e-football-nav-blue font-bold bg-e-football-pink hover:bg-e-football-yellow rounded-full transition-colors duration-500 cursor-pointer">
                 Claim Free GP
               </button>
             </div>
