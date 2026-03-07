@@ -11,19 +11,31 @@
   --font-inter: "Inter", sans-serif;
 
   /* ColorsVariables */
-  --color-nav-link: #13131370;
-  --color-hover-nav-link: #2d3caf;
-  --color-btn-primary: #ffce00;
+  --color-e-football-nav-blue: #3132fe;
+  --color-e-football-blue: #000096;
+  --color-e-football-yellow: #ffff00;
+  --color-e-football-pink: #ff0082;
 }
 
 html,
 body {
-  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: var(--font-inter);
+  background-image: url(./assets/images/efootball_bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .footer-links {
   list-style-type: square;
   padding-left: 1.5rem; /* Adjust as needed for spacing */
+}
+
+.nav-btn:active,
+.nav-btn:focus-visible {
+  background: none;
+  outline: none;
+  border: none;
 }
