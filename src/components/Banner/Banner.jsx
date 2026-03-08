@@ -19,7 +19,7 @@ const Banner = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-nav-link">
               Build Your Ultimate Dream Team
             </h1>
-            <p className="text-center my-4 text-xl mg:text-2xl font-medium md:w-7/12 mx-auto">
+            <p className="text-center my-4 text-lg lg:text-xl mg:text-2xl font-medium md:w-7/12 mx-auto">
               Dominate the pitch by building your ultimate dream team, crafting
               winning strategies and leading your squad to unstoppable football
               glory.

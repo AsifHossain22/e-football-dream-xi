@@ -1,6 +1,6 @@
 [
   {
-    "playerImage": "https://i.ibb.co/TqnKrRd4/Kylian-Mbapp.jpg",
+    "playerImage": "https://i.ibb.co/MyxV42HH/Kylian-Mbapp.png",
     "playerName": "Kylian Mbappé",
     "country": "France",
     "playingRole": "CF",
@@ -9,7 +9,7 @@
     "rating": 101
   },
   {
-    "playerImage": "https://i.ibb.co/KcFxRq7y/Erling-Haaland.jpg",
+    "playerImage": "https://i.ibb.co/4ZVchvbx/Erling-Haaland.png",
     "playerName": "Erling Haaland",
     "country": "Norway",
     "playingRole": "CF",
@@ -18,7 +18,7 @@
     "rating": 100
   },
   {
-    "playerImage": "https://i.ibb.co/GQV6Q7NF/Jude-Bellingham.jpg",
+    "playerImage": "https://i.ibb.co/sdFjfDpK/Jude-Bellingham.jpg",
     "playerName": "Jude Bellingham",
     "country": "England",
     "playingRole": "AMF",
@@ -27,7 +27,7 @@
     "rating": 98
   },
   {
-    "playerImage": "https://i.ibb.co/DfYrLbNk/Rodri.jpg",
+    "playerImage": "https://i.ibb.co/Zp7Xdc7d/Rodri.png",
     "playerName": "Rodri",
     "country": "Spain",
     "playingRole": "DMF",
@@ -36,7 +36,7 @@
     "rating": 97
   },
   {
-    "playerImage": "https://i.ibb.co/SwTGTDY4/Lamine-Yamal.jpg",
+    "playerImage": "https://i.ibb.co/q3VNp4ZZ/Lamine-Yamal.png",
     "playerName": "Lamine Yamal",
     "country": "Spain",
     "playingRole": "RWF",
@@ -45,7 +45,7 @@
     "rating": 102
   },
   {
-    "playerImage": "https://i.ibb.co/KpSnCN4z/Vin-cius-J-nior.jpg",
+    "playerImage": "https://i.ibb.co/s9sVxSnj/Vin-cius-J-nior.png",
     "playerName": "Vinícius Júnior",
     "country": "Brazil",
     "playingRole": "LWF",
@@ -54,7 +54,7 @@
     "rating": 98
   },
   {
-    "playerImage": "https://i.ibb.co/qM6KYdJf/Virgil-van-Dijk.jpg",
+    "playerImage": "https://i.ibb.co/xtmLFXpz/Virgil-van-Dijk.jpg",
     "playerName": "Virgil van Dijk",
     "country": "Netherlands",
     "playingRole": "CB",
@@ -63,7 +63,7 @@
     "rating": 96
   },
   {
-    "playerImage": "https://i.ibb.co/HDmH8MRZ/Kevin-De-Bruyne.jpg",
+    "playerImage": "https://i.ibb.co/vvXpqgrK/Kevin-De-Bruyne.jpg",
     "playerName": "Kevin De Bruyne",
     "country": "Belgium",
     "playingRole": "AMF",
@@ -72,7 +72,7 @@
     "rating": 97
   },
   {
-    "playerImage": "https://i.ibb.co/WpdcrP2K/Mohamed-Salah.jpg",
+    "playerImage": "https://i.ibb.co/0k7TXMs/Mohamed-Salah.jpg",
     "playerName": "Mohamed Salah",
     "country": "Egypt",
     "playingRole": "RWF",
@@ -81,7 +81,7 @@
     "rating": 96
   },
   {
-    "playerImage": "https://i.ibb.co/WptDhCG6/Alisson-Becker.jpg",
+    "playerImage": "https://i.ibb.co/gZ8cKbwm/Alisson-Becker.jpg",
     "playerName": "Alisson Becker",
     "country": "Brazil",
     "playingRole": "GK",
@@ -90,7 +90,7 @@
     "rating": 96
   },
   {
-    "playerImage": "https://i.ibb.co/gZ4rJndP/Rafael-Le-o.jpg",
+    "playerImage": "https://i.ibb.co/yBRvJfCQ/Rafael-Le-o.jpg",
     "playerName": "Rafael Leão",
     "country": "Portugal",
     "playingRole": "LWF",
@@ -99,7 +99,7 @@
     "rating": 95
   },
   {
-    "playerImage": "https://i.ibb.co/svcqcdwm/Bukayo-Saka.jpg",
+    "playerImage": "https://i.ibb.co/fVyjX0nq/Bukayo-Saka.jpg",
     "playerName": "Bukayo Saka",
     "country": "England",
     "playingRole": "RWF",
