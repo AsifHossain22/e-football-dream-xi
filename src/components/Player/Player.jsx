@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 
-const Player = ({ player }) => {
+const Player = ({ player, availableCoin, setAvailableCoin }) => {
   // DestructuringPlayerData
   const {
     playerImage,
@@ -13,10 +13,13 @@ const Player = ({ player }) => {
     rating,
   } = player;
 
+  // SelectedPlayerState
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
     <>
       {/* SinglePlayerCard */}
-      <div className="p-6 rounded-2xl bg-e-football-nav-blue border-5 border-e-football-yellow text-white">
+      <div className="p-6 rounded-2xl bg-e-football-nav-blue border-5 border-[#ffffff] text-white">
         {/* PlayerImage */}
         <div className="mb-6">
           <img
@@ -53,9 +56,19 @@ const Player = ({ player }) => {
             <span className="text-sm lg:text-base font-semibold">
               Price: {price}
             </span>
-            <span className="px-5 py-3.5 text-sm md:text-base text-e-football-nav-blue hover:text-white font-bold bg-e-football-yellow hover:bg-e-football-pink rounded-full transition-colors duration-500 cursor-pointer">
-              Choose Player
-            </span>
+            <button
+              disabled={isSelected}
+              onClick={() => {
+                setIsSelected(true);
+                setAvailableCoin(
+                  availableCoin -
+                    price.split("GP").join("").split(",").join(""),
+                );
+              }}
+              className="px-5 py-3.5 text-sm md:text-base text-e-football-nav-blue hover:text-white font-bold bg-e-football-yellow hover:bg-e-football-pink rounded-full transition-colors duration-500 cursor-pointer"
+            >
+              {isSelected === true ? "Selected" : "Choose Player"}
+            </button>
           </div>
         </div>
       </div>

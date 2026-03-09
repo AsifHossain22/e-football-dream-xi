@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import gpIcon from "../../assets/images/gp.png";
 
-const Header = () => {
+const Header = ({ availableCoin }) => {
   // ScrollState
   const [scrolled, setScrolled] = useState(false);
 
@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full ${scrolled ? "backdrop-blur-md shadow-md" : "bg-transparent"} transition-all duration-300 `}
+      className={`sticky top-0 z-50 w-full ${scrolled ? "bg-e-football-nav-blue shadow-md" : "bg-transparent"} transition-all duration-300 `}
     >
       {/* Navbar */}
       <div className="navbar justify-between max-w-7xl mx-auto px-4 lg:px-0">
@@ -78,7 +78,7 @@ const Header = () => {
                     alt="GP Icon"
                   />
                 </span>{" "}
-                0
+                {availableCoin}
               </a>
             </div>
           </ul>

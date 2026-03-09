@@ -2,8 +2,8 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div className="flex items-center justify-center py-20">
-      <span className="loading loading-dots loading-xl"></span>
+    <div className="flex items-center justify-center mb-20">
+      <span className="loading loading-dots loading-xl bg-e-football-yellow"></span>
     </div>
   );
 };

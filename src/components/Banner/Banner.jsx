@@ -1,5 +1,7 @@
 import React from "react";
 import bannerImage from "../../assets/images/banner.png";
+import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
 const Banner = () => {
   return (
