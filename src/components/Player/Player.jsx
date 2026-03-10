@@ -29,7 +29,11 @@ const Player = ({
       playerData.price.split("GP").join("").split(",").join(""),
     );
     if (availableCoin < playerPrice) {
-      alert("Not enough coin!");
+      Swal.fire({
+        icon: "error",
+        title: "You don't have enough GP to sign this player!",
+        confirmButtonColor: "#ff2b7a",
+      });
       return;
     }
     setIsSelected(true);

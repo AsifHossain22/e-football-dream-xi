@@ -96,6 +96,7 @@ const App = () => {
           <SelectedPlayers
             purchasedPlayers={purchasedPlayers}
             handleRemovePlayer={handleRemovePlayer}
+            setToggle={setToggle}
           />
         )}
       </main>
