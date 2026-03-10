@@ -1,5 +1,6 @@
 import React, { use } from "react";
 import Player from "../Player/Player";
+import NewsLetter from "../NewsLetter/NewsLetter";
 
 const AvailablePlayers = ({
   purchasedPlayers,
@@ -25,6 +26,9 @@ const AvailablePlayers = ({
           />
         ))}
       </div>
+
+      {/* Newsletter */}
+      <NewsLetter />
     </section>
   );
 };

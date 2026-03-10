@@ -32,6 +32,17 @@ const Header = ({ availableCoin }) => {
             />
           </a>
         </div>
+
+        {/* CoinsDisplayButton */}
+        <div className="text-center my-3 lg:hidden">
+          <a className="btn font-sora shadow-none bg-e-football-pink hover:bg-e-football-yellow border border-e-football-pink hover:border-e-football-yellow text-white hover:text-e-football-blue hover:shadow-none hover:scale-110 transition-all duration-300 px-4 py-1 rounded-full">
+            <span>
+              <img className="w-7 rounded-full" src={gpIcon} alt="GP Icon" />
+            </span>{" "}
+            {availableCoin}
+          </a>
+        </div>
+
         {/* DesktopNav */}
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 items-center">
@@ -143,20 +154,6 @@ const Header = ({ availableCoin }) => {
                 Teams
               </a>
             </li>
-
-            {/* CoinsDisplayButton */}
-            <div className="text-center my-3">
-              <a className="btn font-sora shadow-none bg-e-football-pink hover:bg-e-football-yellow border border-e-football-pink hover:border-e-football-yellow text-white hover:text-e-football-blue hover:shadow-none hover:scale-110 transition-all duration-300 px-4 py-1 rounded-full">
-                <span>
-                  <img
-                    className="w-7 rounded-full"
-                    src={gpIcon}
-                    alt="GP Icon"
-                  />
-                </span>{" "}
-                {availableCoin}
-              </a>
-            </div>
           </ul>
         </div>
       </div>

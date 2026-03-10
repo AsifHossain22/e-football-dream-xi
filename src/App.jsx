@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import Loader from "./components/Loader/Loader";
+import Footer from "./components/Footer/Footer";
 
 const fetchPlayer = async () => {
   const res = await fetch("/playersData.json");
@@ -100,6 +101,9 @@ const App = () => {
           />
         )}
       </main>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
