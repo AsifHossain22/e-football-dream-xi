@@ -17,10 +17,15 @@ const App = () => {
   const [toggle, setToggle] = useState(true);
 
   // CoinState
-  const [availableCoin, setAvailableCoin] = useState(1000000);
+  const [availableCoin, setAvailableCoin] = useState(0);
 
   // PurchasedPlayerState
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  // HandleClaimGPCoinFunction
+  const handleClaimGP = () => {
+    setAvailableCoin(availableCoin + 1000000);
+  };
 
   const handleRemovePlayer = (p) => {
     // console.log(p);
@@ -44,7 +49,7 @@ const App = () => {
       {/* Main */}
       <main>
         {/* BannerSection */}
-        <Banner />
+        <Banner handleClaimGP={handleClaimGP} />
 
         {/*  */}
 

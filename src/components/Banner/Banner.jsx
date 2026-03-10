@@ -1,9 +1,31 @@
 import React from "react";
 import bannerImage from "../../assets/images/banner.png";
-import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
-import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
+import Swal from "sweetalert2";
 
-const Banner = () => {
+const Banner = ({ handleClaimGP }) => {
+  // HandleClaimFreeGP
+  const claimFreeGP = () => {
+    Swal.fire({
+      title: "Do you want to claim 1,000,000 GP?",
+      showCancelButton: true,
+      confirmButtonColor: "#ff0082",
+      cancelButtonColor: "",
+      confirmButtonText: "Yes, claim Now!",
+      cancelButtonText: "Cancel",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        handleClaimGP(); // AddGPByCallingFunction
+
+        // SuccessMessageAfterClaimingGP
+        Swal.fire({
+          title: "Success!",
+          text: "1,000,000 GP has been added!",
+          confirmButtonColor: "#3132fe",
+        });
+      }
+    });
+  };
+
   return (
     <section className="px-4 lg:px-0">
       <div className="max-w-7xl mx-auto px-4 lg:px-0 py-4 lg:py-8 text-white">
@@ -27,7 +49,10 @@ const Banner = () => {
               glory.
             </p>
             <div className="inline-block border-2 border-e-football-pink hover:border-e-football-yellow rounded-full hover:scale-105 transition-all duration-300">
-              <button className="px-5 py-3.5 m-2 text-sm md:text-base text-white hover:text-e-football-nav-blue font-bold bg-e-football-pink hover:bg-e-football-yellow rounded-full transition-colors duration-500 cursor-pointer">
+              <button
+                onClick={claimFreeGP}
+                className="px-5 py-3.5 m-2 text-sm md:text-base text-white hover:text-e-football-nav-blue font-bold bg-e-football-pink hover:bg-e-football-yellow rounded-full transition-colors duration-500 cursor-pointer"
+              >
                 Claim Free GP
               </button>
             </div>
