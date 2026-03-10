@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const Player = ({
   player,
@@ -22,6 +23,7 @@ const Player = ({
   // SelectedPlayerState
   const [isSelected, setIsSelected] = useState(false);
 
+  // HandleSelectedFunction
   const handleSelected = (playerData) => {
     const playerPrice = parseInt(
       playerData.price.split("GP").join("").split(",").join(""),
@@ -33,6 +35,13 @@ const Player = ({
     setIsSelected(true);
     setAvailableCoin(availableCoin - playerPrice);
     setPurchasedPlayers([...purchasedPlayers, player]);
+
+    // ShowSweetAlertWhilePlayerSelection
+    Swal.fire({
+      icon: "success",
+      title: `${playerName} added to your squad!`,
+      confirmButtonColor: "#ff2b7a",
+    });
   };
 
   return (
@@ -80,7 +89,7 @@ const Player = ({
               onClick={() => {
                 handleSelected(player);
               }}
-              className="px-5 py-3.5 text-sm md:text-base text-e-football-nav-blue hover:text-white font-bold bg-e-football-yellow hover:bg-e-football-pink rounded-full transition-colors duration-500 cursor-pointer"
+              className="px-5 py-3.5 text-sm md:text-base text-e-football-nav-blue hover:text-white font-bold bg-e-football-yellow hover:bg-e-football-pink rounded-full transition-colors duration-500 cursor-pointer disabled:opacity-100 disabled:bg-gray-400 disabled:text-e-football-nav-blue disabled:cursor-not-allowed"
             >
               {isSelected === true ? "Selected" : "Choose Player"}
             </button>

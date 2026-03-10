@@ -154,7 +154,7 @@ const Header = ({ availableCoin }) => {
                     alt="GP Icon"
                   />
                 </span>{" "}
-                0
+                {availableCoin}
               </a>
             </div>
           </ul>

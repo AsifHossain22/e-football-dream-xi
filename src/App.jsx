@@ -24,7 +24,7 @@ const App = () => {
 
   // HandleClaimGPCoinFunction
   const handleClaimGP = () => {
-    setAvailableCoin(availableCoin + 1000000);
+    setAvailableCoin(availableCoin + 1000000); // ClaimOneMillionGP
   };
 
   const handleRemovePlayer = (p) => {
