@@ -30,7 +30,7 @@ const Player = ({
     );
     if (availableCoin < playerPrice) {
       Swal.fire({
-        icon: "error",
+        icon: "warning",
         title: "You don't have enough GP to sign this player!",
         confirmButtonColor: "#ff2b7a",
       });
