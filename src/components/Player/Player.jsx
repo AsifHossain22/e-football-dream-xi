@@ -28,6 +28,19 @@ const Player = ({
     const playerPrice = parseInt(
       playerData.price.split("GP").join("").split(",").join(""),
     );
+
+    // MaxSelectedPlayerCondition
+    if (purchasedPlayers.length >= 6) {
+      Swal.fire({
+        icon: "warning",
+        title: "Squad Full!",
+        text: "You can only select 6 players.",
+        confirmButtonColor: "#ff2b7a",
+      });
+      return;
+    }
+
+    // CheckCoin
     if (availableCoin < playerPrice) {
       Swal.fire({
         icon: "warning",
