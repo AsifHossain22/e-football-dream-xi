@@ -17,7 +17,24 @@ const App = () => {
   const [toggle, setToggle] = useState(true);
 
   // CoinState
-  const [availableCoin, setAvailableCoin] = useState(10000000000);
+  const [availableCoin, setAvailableCoin] = useState(1000000);
+
+  // PurchasedPlayerState
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  const handleRemovePlayer = (p) => {
+    // console.log(p);
+
+    const filteredData = purchasedPlayers.filter(
+      (removePlayer) => removePlayer.playerName !== p.playerName,
+    );
+    // console.log(filteredData);
+    setPurchasedPlayers(filteredData);
+    setAvailableCoin(
+      availableCoin +
+        parseInt(p.price.split("GP").join("").split(",").join("")),
+    );
+  };
 
   return (
     <>
@@ -39,7 +56,9 @@ const App = () => {
           <h2
             className={`font-sora font-bold text-xl md:text-[28px] lg:text-4xl text-e-football-yellow`}
           >
-            Featured Players
+            {toggle === true
+              ? "Available Players"
+              : `Selected Players (${purchasedPlayers.length}/6)`}
           </h2>
           <div className="">
             <button
@@ -52,7 +71,7 @@ const App = () => {
               onClick={() => setToggle(false)}
               className={`btn ${toggle === false ? "bg-e-football-pink" : "bg-e-football-nav-blue"} px-5 py-6 text-base text-white border-5 border-l-0 border-white rounded-r-full`}
             >
-              Selected (0)
+              Selected ({purchasedPlayers.length}/6)
             </button>
           </div>
         </div>
@@ -61,13 +80,18 @@ const App = () => {
         {toggle === true ? (
           <Suspense fallback={<Loader />}>
             <AvailablePlayers
+              purchasedPlayers={purchasedPlayers}
+              setPurchasedPlayers={setPurchasedPlayers}
               availableCoin={availableCoin}
               setAvailableCoin={setAvailableCoin}
               playersPromise={playersPromise}
             />
           </Suspense>
         ) : (
-          <SelectedPlayers />
+          <SelectedPlayers
+            purchasedPlayers={purchasedPlayers}
+            handleRemovePlayer={handleRemovePlayer}
+          />
         )}
       </main>
     </>

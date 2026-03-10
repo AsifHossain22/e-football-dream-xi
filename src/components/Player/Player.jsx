@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 
-const Player = ({ player, availableCoin, setAvailableCoin }) => {
+const Player = ({
+  player,
+  availableCoin,
+  setAvailableCoin,
+  purchasedPlayers,
+  setPurchasedPlayers,
+}) => {
   // DestructuringPlayerData
   const {
     playerImage,
@@ -15,6 +21,19 @@ const Player = ({ player, availableCoin, setAvailableCoin }) => {
 
   // SelectedPlayerState
   const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelected = (playerData) => {
+    const playerPrice = parseInt(
+      playerData.price.split("GP").join("").split(",").join(""),
+    );
+    if (availableCoin < playerPrice) {
+      alert("Not enough coin!");
+      return;
+    }
+    setIsSelected(true);
+    setAvailableCoin(availableCoin - playerPrice);
+    setPurchasedPlayers([...purchasedPlayers, player]);
+  };
 
   return (
     <>
@@ -59,11 +78,7 @@ const Player = ({ player, availableCoin, setAvailableCoin }) => {
             <button
               disabled={isSelected}
               onClick={() => {
-                setIsSelected(true);
-                setAvailableCoin(
-                  availableCoin -
-                    price.split("GP").join("").split(",").join(""),
-                );
+                handleSelected(player);
               }}
               className="px-5 py-3.5 text-sm md:text-base text-e-football-nav-blue hover:text-white font-bold bg-e-football-yellow hover:bg-e-football-pink rounded-full transition-colors duration-500 cursor-pointer"
             >
