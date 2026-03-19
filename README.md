@@ -1,16 +1,51 @@
-# React + Vite
+# E-Football Dream XI — Ultimate Team Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Football Dream XI is a feature-rich React application that brings the excitement of football management to the web. Users can manage a virtual coin balance, browse a marketplace of elite players and strategically build a 6-player "Dream XI" while staying within budget.
 
-Currently, two official plugins are available:
+**Live Demo: https://e-football-dream-xi.netlify.app/**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Virtual Economy System:** Claim "Free Credits" to increase your coin balance and spend them on players.
+* **Player Marketplace:** Browse a wide selection of international players with detailed stats (Nationality, Role, Price).
+* **Smart Selection Logic:**
+    * **Budget Validation:** Prevents buying players if the balance is insufficient.
+    * **Duplicate Prevention:** Users cannot select the same player twice.
+    * **Squad Limit:** Strictly enforces a maximum of 6 players per team.
+* **Toggle View Interface:** Easily switch between the "Available" player shop and the "Selected" squad list.
+* **Interactive Feedback:** Integrated toast notifications for successful purchases, warnings (insufficient funds) and removals.
+* **Dynamic Team Management:** Remove players from your squad to refund coins and free up spots.
+* **Modern UI:** Styled with high-energy colors, gradients and a mobile-responsive layout.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies
+
+| Technology | Purpose |
+| :--- | :--- |
+| **React** | Building the modular player cards and state-driven UI |
+| **Tailwind CSS** | Styling the professional gaming interface and glassmorphism effects |
+| **DaisyUI** | Providing clean layouts for buttons, badges and avatars |
+| **React Hot Toast** | Real-time alerts for player selection and budget errors |
+| **React Icons** | Using sports-themed iconography (Flags, User roles, Coins) |
+| **Vite** | Lightning-fast development and build environment |
+| **Netlify** | Automated deployment and hosting |
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assets/               # Banner images, logos and coin icons
+├── components/           # Reusable UI components
+│   ├── Header/           # Sticky navbar with live Coin Balance display
+│   ├── Hero/             # Main banner with the "Claim Free Credit" button
+│   ├── PlayerContainer/  # Logic for switching between Available & Selected
+│   ├── AvailablePlayers/ # Grid of player cards available for purchase
+│   ├── SelectedPlayers/  # List of players currently in the squad
+│   └── Footer/           # Footer with newsletter subscription
+├── App.jsx               # Core state (balance, selectedPlayers) and logic
+└── main.jsx              # Application entry point
