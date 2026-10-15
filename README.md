@@ -1,4 +1,4 @@
-# E-Football Dream XI ⚽
+# E-Football Dream XI 
 
 Build your dream football XI and explore an interactive football team-building experience with a modern, responsive web interface.
 
